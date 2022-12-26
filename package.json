@@ -1,0 +1,34 @@
+{
+  "name": "turboimpot-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "postinstall": "cd ./src/plugins/wysiwyg && npm install & cd ../../../"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "^4.5.2",
+    "@strapi/plugin-users-permissions": "^4.5.2",
+    "@strapi/provider-upload-cloudinary": "^4.5.4",
+    "@strapi/strapi": "^4.5.2",
+    "pg": "^8.8.0",
+    "sqlite3": "^5.1.2",
+    "strapi-plugin-vercel-deploy": "^1.4.0",
+    "stripe": "^11.3.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "b4a9b934-98e8-401e-9f60-ad3319a3e359"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
