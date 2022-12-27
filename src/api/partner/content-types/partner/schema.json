@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "reviews",
+  "collectionName": "partners",
   "info": {
-    "singularName": "review",
-    "pluralName": "reviews",
-    "displayName": "Review",
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "partner",
     "description": ""
   },
   "options": {
@@ -12,13 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Author": {
+    "websiteLink": {
       "type": "string"
     },
-    "Body": {
-      "type": "text"
-    },
-    "Image": {
+    "logo": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -29,8 +26,8 @@
         "audios"
       ]
     },
-    "Rating": {
-      "type": "decimal"
+    "name": {
+      "type": "string"
     }
   }
 }
