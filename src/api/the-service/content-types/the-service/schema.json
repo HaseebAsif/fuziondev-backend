@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "the_services",
+  "info": {
+    "singularName": "the-service",
+    "pluralName": "the-services",
+    "displayName": "theService",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "smallDetail": {
+      "type": "text"
+    },
+    "moreDetail": {
+      "type": "richtext"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
