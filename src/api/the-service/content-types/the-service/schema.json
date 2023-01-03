@@ -15,23 +15,15 @@
     "title": {
       "type": "string"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "detail": {
       "type": "richtext"
     },
     "Slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "link": {
+      "type": "text"
     }
   }
 }
